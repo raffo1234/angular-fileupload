@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <title>File inputs</title>
+</head>
+
+<body ng-controller="fileModelCtrl">
+  <h1>File inputs</h1>
+  <br> {{ inputs }}
+  <div ng-repeat="item in inputs">
+    <input type="file" name="image" file-model="image-{{$index}}">
+    <br>
+    <br>
+  </div>
+  <br>
+  <br>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
